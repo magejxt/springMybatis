@@ -7,22 +7,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>springMybatis Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <properties>
+  <properties><!-- 指向版本号 -->
   	<spring.version>4.3.1.RELEASE</spring.version>
   	<mybatis.version>3.2.8</mybatis.version>
+  	<log4j.version>1.2.17</log4j.version>
   </properties>
   <dependencies>
+  	<!-- 测试包 -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- 打印日志 -->
    	<dependency>
 		<groupId>commons-logging</groupId>
 		<artifactId>commons-logging</artifactId>
 		<version>1.2</version>
 	</dependency>
+	<!-- spring包开始 -->
 	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-beans</artifactId>
@@ -82,6 +86,9 @@
 		<artifactId>spring-context-support</artifactId>
 		<version>${spring.version}</version>
 	</dependency>
+	<!-- spring 包结束 -->
+	
+	
 	<!-- 映入JSON -->
 	<dependency>
 		<groupId>org.codehaus.jackson</groupId>
@@ -99,6 +106,9 @@
 		<artifactId>jackson-databind</artifactId>
 		<version>2.8.1</version>
 	</dependency>
+	<!-- 映入JSON结束 -->
+	
+	
 	<!--框架数据库连接池 -->
 	<dependency>
 		<groupId>org.mybatis</groupId>
@@ -117,6 +127,8 @@
 		<version>6.0.3</version>
 		<!-- <version>5.1.30</version> -->
 	</dependency>
+	
+	<!-- jdbc的驱动  -->
 	<dependency>
 		<groupId>org.apache.tomcat</groupId>
 		<artifactId>tomcat-jdbc</artifactId>
@@ -126,6 +138,14 @@
 		<groupId>org.apache.tomcat</groupId>
 		<artifactId>tomcat-juli</artifactId>
 		<version>7.0.29</version>
+	</dependency>
+	<!-- jdbc的驱动结束 -->
+	
+	<!-- log4j -->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>${log4j.version}</version>
 	</dependency>
   </dependencies>
   <build>
