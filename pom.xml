@@ -8,7 +8,7 @@
   <name>springMybatis Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties><!-- 指向版本号 -->
-  	<spring.version>4.3.1.RELEASE</spring.version>
+  	<spring.version>4.3.7.RELEASE</spring.version>
   	<mybatis.version>3.2.8</mybatis.version>
   	<log4j.version>1.2.17</log4j.version>
   </properties>
@@ -141,6 +141,18 @@
 	</dependency>
 	<!-- jdbc的驱动结束 -->
 	
+	<!-- webservice包开始 -->
+	<dependency>  
+	    <groupId>org.apache.cxf</groupId>  
+	    <artifactId>cxf-rt-frontend-jaxws</artifactId>  
+	    <version>3.1.8</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>org.apache.cxf</groupId>  
+	    <artifactId>cxf-rt-transports-http</artifactId>  
+	    <version>3.1.8</version>  
+	</dependency>
+	<!-- webservice包结束 -->
 	<!-- log4j -->
 	<dependency>
 		<groupId>log4j</groupId>
